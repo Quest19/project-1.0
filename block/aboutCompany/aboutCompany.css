@@ -1,0 +1,63 @@
+
+.aboutCompany__container {
+  max-width: 1280px;
+  border: 1px solid rgb(24, 24, 157);
+  border-radius: 50px;
+  margin: 60px auto;
+  padding: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 4, 115, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutCompany__title {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.aboutCompany__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: url("../../images/arrow-down-square-svgrepo-com.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  animation: blink 2s infinite alternate; /* Добавляем анимацию мигания */
+}
+
+.aboutCompany__text-conatiner {
+  display: none;
+  flex-direction: column;
+}
+
+.aboutCompany__text-conatiner_type_opened {
+  display: flex;
+}
+
+.aboutCompany__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.aboutCompany__direction {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+@keyframes blink {
+  from {
+    background-color: #ffffff; /* Начальный цвет фона */
+  }
+  to {
+    background-color: #b0f8fc; /* Конечный цвет фона (например, красный) */
+  }
+}

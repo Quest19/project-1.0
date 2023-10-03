@@ -1,0 +1,62 @@
+.services__container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.services__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 100px auto 50px;
+}
+
+.services__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: url("../../images/arrow-down-square-svgrepo-com.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+  animation: blink 2s infinite alternate; /* Добавляем анимацию мигания */
+}
+
+.services__blocks {
+  max-width: 1180px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: none;
+  flex-direction: column;
+}
+
+.services__blocks_type_opened {
+  display: flex;
+}
+
+.services__block {
+  height: 60px;
+  border: 1px solid rgb(24, 24, 157);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+}
+
+.services__block:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.services_img {
+  width: 40px;
+  height: 40px;
+  padding-right: 15px;
+}
