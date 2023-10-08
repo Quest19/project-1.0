@@ -1,8 +1,66 @@
 .header {
-  max-width: 1280px;
-  margin: 20px auto 0;
-  padding: 0 20px;
+  height: 600px;
+  background-image: url("../../images/041.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0px 52px 100px 1px rgba(34, 60, 80, 0.63) inset;
+  color: white;
+}
+
+.header__container {
+  width: 1240px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.header__logo-container {
+  max-width: 800px;
+}
+
+.header__logo {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.header__title {
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4s steps(30, end);
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.header__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__link-container {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  padding-top: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
