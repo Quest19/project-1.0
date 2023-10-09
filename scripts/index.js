@@ -1,21 +1,12 @@
-// const servicesButton = document.querySelector(".services__button");
-// const servicesContainer = document.querySelector(".services__blocks");
-// const aboutCompanyButton = document.querySelector(".aboutCompany__button");
-// const aboutCompanyContainer = document.querySelector(
-//     ".aboutCompany__text-conatiner"
-// );
+const servicesButton = document.querySelector(".services__button");
+const servicesContainer = document.querySelector(".services__blocks");
 
-// function serviceToggle() {
-//     servicesContainer.classList.toggle("services__blocks_type_opened");
-// }
-// servicesButton.addEventListener("click", serviceToggle);
 
-// function aboutCompanyToggle() {
-//     aboutCompanyContainer.classList.toggle(
-//         "aboutCompany__text-conatiner_type_opened"
-//     );
-// }
-// aboutCompanyButton.addEventListener("click", aboutCompanyToggle);
+function serviceToggle() {
+    servicesContainer.classList.toggle("services__blocks_type_opened");
+}
+servicesButton.addEventListener("click", serviceToggle);
+
 
 async function submitForm(event) {
     event.preventDefault();
